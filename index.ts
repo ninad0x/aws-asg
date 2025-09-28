@@ -8,10 +8,10 @@ app.get("/", (req, res) => {
 
 
 app.get("/cpu", (req, res) => {
-    for (let i = 0; i < 1000000000; i++) {
+    for (let i = 0; i < 1_000_000_00; i++) {
         Math.random();
     }
-    res.send("Hello World");
+    res.send("Heavy task done ✅");
 });
 
 
